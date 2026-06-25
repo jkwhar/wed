@@ -1,1 +1,128 @@
-somecode
+{
+  "meta": {
+    "last_updated": "2026-06-23",
+    "updated_by": "Claude Wedding Planner"
+  },
+  "couple": {
+    "partner1": "Johnny Kim",
+    "partner2": "Tanya Holubiak",
+    "target_date": "2027-11-13",
+    "location": "New Jersey / New York",
+    "aesthetic": "Barn / Rustic / Industrial",
+    "guest_count": 150
+  },
+  "progress": {
+    "current_phase": 1,
+    "overall_pct": 18
+  },
+  "budget": {
+    "total": 50000,
+    "committed": 0,
+    "categories": [
+      { "name": "Venue & rentals",   "allocated": 15000, "spent": 0, "color": "#BA7517" },
+      { "name": "Catering & bar",    "allocated": 14000, "spent": 0, "color": "#639922" },
+      { "name": "Photography",       "allocated": 5000,  "spent": 0, "color": "#1D9E75" },
+      { "name": "Florals & décor",   "allocated": 4000,  "spent": 0, "color": "#D85A30" },
+      { "name": "Music / DJ",        "allocated": 2500,  "spent": 0, "color": "#7F77DD" },
+      { "name": "Attire & rings",    "allocated": 2500,  "spent": 0, "color": "#D4537E" },
+      { "name": "Invites & misc",    "allocated": 2000,  "spent": 0, "color": "#888780" },
+      { "name": "Buffer / tips",     "allocated": 5000,  "spent": 0, "color": "#444441" }
+    ]
+  },
+  "phases": [
+    {
+      "id": 1,
+      "title": "Foundations",
+      "status": "active",
+      "items": [
+        { "text": "Set total budget ($50,000)",                  "status": "done" },
+        { "text": "Define aesthetic (barn / rustic / industrial)","status": "done" },
+        { "text": "Estimate guest count (~150)",                 "status": "done" },
+        { "text": "Send venue inquiry — The Greenpoint Loft",    "status": "hot" },
+        { "text": "Confirm preferred date (Nov 6 or 13, 2027)",  "status": "hot" },
+        { "text": "Build backup venue shortlist (4–5 venues)",   "status": "todo" },
+        { "text": "Draft full budget allocation across categories","status": "todo" }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Curation & Booking",
+      "status": "upcoming",
+      "items": [
+        { "text": "Build rustic / barn mood board",       "status": "todo" },
+        { "text": "Source and book photographer",         "status": "todo" },
+        { "text": "Source and book caterer",              "status": "todo" },
+        { "text": "Source and book DJ / band",            "status": "todo" },
+        { "text": "Source officiant",                     "status": "todo" },
+        { "text": "Book florist / décor vendor",          "status": "todo" },
+        { "text": "Review and sign all vendor contracts", "status": "todo" }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Logistics & Invites",
+      "status": "upcoming",
+      "items": [
+        { "text": "Design and send save-the-dates", "status": "todo" },
+        { "text": "Build wedding website",          "status": "todo" },
+        { "text": "Set up gift registry",           "status": "todo" },
+        { "text": "Send formal invitations",        "status": "todo" },
+        { "text": "RSVP tracking system",           "status": "todo" },
+        { "text": "Build seating chart",            "status": "todo" }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "The Home Stretch",
+      "status": "upcoming",
+      "items": [
+        { "text": "Final dress / suit fittings",                "status": "todo" },
+        { "text": "Confirm final guest counts with all vendors", "status": "todo" },
+        { "text": "Final venue walk-through",                   "status": "todo" },
+        { "text": "Coordinate rehearsal dinner",                "status": "todo" },
+        { "text": "Finalize transportation plan",               "status": "todo" }
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Execution & Day-of",
+      "status": "upcoming",
+      "items": [
+        { "text": "Build master day-of timeline",              "status": "todo" },
+        { "text": "Prepare emergency kit",                     "status": "todo" },
+        { "text": "Distribute vendor contact sheet",           "status": "todo" },
+        { "text": "Script ceremony & reception moments",       "status": "todo" },
+        { "text": "Final vendor confirmations (48hr out)",     "status": "todo" }
+      ]
+    }
+  ],
+  "venues": [
+    {
+      "name": "The Greenpoint Loft",
+      "location": "Brooklyn, NY",
+      "style": "Industrial / Loft",
+      "status": "primary",
+      "capacity": "~150",
+      "notes": ["Inquiry drafted", "Catering TBC", "Noise curfew TBC"]
+    },
+    {
+      "name": "Backup shortlist",
+      "location": "NJ / Brooklyn",
+      "style": "Barn / Rustic / Industrial",
+      "status": "pending",
+      "capacity": "~150",
+      "notes": ["4–5 venues to be identified"]
+    }
+  ],
+  "dates": [
+    { "label": "Sat Nov 6",  "date": "2027-11-06", "risk": "low",  "recommended": true,  "note": "Recommended" },
+    { "label": "Sat Nov 13", "date": "2027-11-13", "risk": "low",  "recommended": true,  "note": "Recommended" },
+    { "label": "Sat Nov 20", "date": "2027-11-20", "risk": "high", "recommended": false, "note": "Thanksgiving risk" }
+  ],
+  "notes": [
+    { "color": "#EF9F27", "text": "NJ/NY vendor pricing often carries hidden service charges and layered fees — always request fully itemized quotes before signing." },
+    { "color": "#EF9F27", "text": "Pursue multiple venues simultaneously — fall Saturdays in this market book 12–18 months in advance." },
+    { "color": "#639922", "text": "Nov 6 and Nov 13 are the recommended date targets. Nov 20 carries Thanksgiving travel conflict risk." },
+    { "color": "#D85A30", "text": "The Greenpoint Loft inquiry email is drafted and ready to send — highest-priority action right now." }
+  ]
+}
