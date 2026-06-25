@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-06-23",
+    "last_updated": "2026-06-24",
     "updated_by": "Claude Wedding Planner"
   },
   "couple": {
@@ -13,7 +13,7 @@
   },
   "progress": {
     "current_phase": 1,
-    "overall_pct": 18
+    "overall_pct": 22
   },
   "budget": {
     "total": 50000,
@@ -35,12 +35,16 @@
       "title": "Foundations",
       "status": "active",
       "items": [
-        { "text": "Set total budget ($50,000)",                  "status": "done" },
-        { "text": "Define aesthetic (barn / rustic / industrial)","status": "done" },
-        { "text": "Estimate guest count (~150)",                 "status": "done" },
-        { "text": "Send venue inquiry — The Greenpoint Loft",    "status": "hot" },
-        { "text": "Confirm preferred date (Nov 6 or 13, 2027)",  "status": "hot" },
-        { "text": "Build backup venue shortlist (4–5 venues)",   "status": "todo" },
+        { "text": "Set total budget ($50,000)",                   "status": "done" },
+        { "text": "Define aesthetic (barn / rustic / industrial)", "status": "done" },
+        { "text": "Estimate guest count (~150)",                  "status": "done" },
+        { "text": "Send catering inquiries (9 vendors contacted)", "status": "done" },
+        { "text": "Confirm preferred date (Nov 6 or 13, 2027)",   "status": "hot" },
+        { "text": "Reply to BK Venues / Greenpoint Loft tour",    "status": "hot" },
+        { "text": "Request formal proposals — Tasty Creations & Creative Foods", "status": "hot" },
+        { "text": "Schedule consult call — Jillicious Foods (10% off before Aug 1)", "status": "hot" },
+        { "text": "Reply to Bassett Caterers (followed up twice)", "status": "hot" },
+        { "text": "Build backup venue shortlist (4–5 venues)",    "status": "todo" },
         { "text": "Draft full budget allocation across categories","status": "todo" }
       ]
     },
@@ -50,8 +54,8 @@
       "status": "upcoming",
       "items": [
         { "text": "Build rustic / barn mood board",       "status": "todo" },
+        { "text": "Book caterer (target: Tasty Creations or Creative Foods)", "status": "todo" },
         { "text": "Source and book photographer",         "status": "todo" },
-        { "text": "Source and book caterer",              "status": "todo" },
         { "text": "Source and book DJ / band",            "status": "todo" },
         { "text": "Source officiant",                     "status": "todo" },
         { "text": "Book florist / décor vendor",          "status": "todo" },
@@ -88,11 +92,11 @@
       "title": "Execution & Day-of",
       "status": "upcoming",
       "items": [
-        { "text": "Build master day-of timeline",              "status": "todo" },
-        { "text": "Prepare emergency kit",                     "status": "todo" },
-        { "text": "Distribute vendor contact sheet",           "status": "todo" },
-        { "text": "Script ceremony & reception moments",       "status": "todo" },
-        { "text": "Final vendor confirmations (48hr out)",     "status": "todo" }
+        { "text": "Build master day-of timeline",          "status": "todo" },
+        { "text": "Prepare emergency kit",                 "status": "todo" },
+        { "text": "Distribute vendor contact sheet",       "status": "todo" },
+        { "text": "Script ceremony & reception moments",   "status": "todo" },
+        { "text": "Final vendor confirmations (48hr out)", "status": "todo" }
       ]
     }
   ],
@@ -103,7 +107,15 @@
       "style": "Industrial / Loft",
       "status": "primary",
       "capacity": "~150",
-      "notes": ["Inquiry drafted", "Catering TBC", "Noise curfew TBC"]
+      "notes": ["All Nov 2027 Saturdays available (confirmed by BK Venues)", "Tour scheduling reply pending from Johnny", "Catering: open to outside vendors; confirm kitchen fee", "Noise curfew TBC"]
+    },
+    {
+      "name": "Crystal Springs Resort",
+      "location": "NJ",
+      "style": "Rustic / Resort",
+      "status": "secondary",
+      "capacity": "~150",
+      "notes": ["Outreach email drafted — send/confirm sent", "Follow up if no reply within 1 week"]
     },
     {
       "name": "Backup shortlist",
@@ -111,18 +123,354 @@
       "style": "Barn / Rustic / Industrial",
       "status": "pending",
       "capacity": "~150",
-      "notes": ["4–5 venues to be identified"]
+      "notes": ["4–5 venues to be identified and contacted"]
     }
   ],
   "dates": [
-    { "label": "Sat Nov 6",  "date": "2027-11-06", "risk": "low",  "recommended": true,  "note": "Recommended" },
-    { "label": "Sat Nov 13", "date": "2027-11-13", "risk": "low",  "recommended": true,  "note": "Recommended" },
-    { "label": "Sat Nov 20", "date": "2027-11-20", "risk": "high", "recommended": false, "note": "Thanksgiving risk" }
+    { "label": "Sat Nov 6",  "date": "2027-11-06", "risk": "low",  "recommended": true,  "note": "Preferred — first choice" },
+    { "label": "Sat Nov 13", "date": "2027-11-13", "risk": "low",  "recommended": true,  "note": "Preferred — second choice" },
+    { "label": "Sat Nov 20", "date": "2027-11-20", "risk": "high", "recommended": false, "note": "Thanksgiving proximity — avoid" }
   ],
+  "catering": {
+    "budget_target": 28000,
+    "budget_note": "Keep food + bar + tax + rentals under ~$28-30K to leave room for all other vendors within $50K total.",
+    "guest_count": 150,
+    "vendors": [
+      {
+        "id": "tasty-creations",
+        "name": "Tasty Creations by LCI Caterers",
+        "contact": "Susanne De Bono",
+        "email": "tastycreationsny@gmail.com",
+        "phone": "718.441.4111",
+        "status": "responded",
+        "priority": "top",
+        "responded": true,
+        "bk_preferred": true,
+        "rating": 5,
+        "style": "Traditional / Full-service",
+        "experience": "35+ years",
+        "awards": ["Best of Weddings — WeddingWire", "Couple's Choice — The Knot", "Top 10 caterers NY"],
+        "guest_minimum": 100,
+        "pricing": {
+          "food": {
+            "buffet_pp": 90,
+            "family_style_pp": 125,
+            "plated_base_pp": 60,
+            "stations_base_pp": 90
+          },
+          "bar": {
+            "wine_beer_pp": 45,
+            "open_bar_standard_pp": 55,
+            "open_bar_mid_pp": 65,
+            "open_bar_top_pp": 90
+          },
+          "estimate_150_buffet_standard_bar": {
+            "food": 13500,
+            "bar": 8250,
+            "tax_est": 1930,
+            "bartenders_est": 750,
+            "total_est": 24430,
+            "notes": "Tax 8.875% NY. Add ~$750 for 3 bartenders at $250 each."
+          }
+        },
+        "included": [
+          "5-hour event",
+          "Cocktail hour with 6 passed appetizers",
+          "Full dinner in chosen service style",
+          "Dessert (cannolis, sliced fruit, Italian cookies)",
+          "Coffee & tea service",
+          "All waitstaff & kitchen staff",
+          "China, silverware, glassware, linen napkins (multiple color options)"
+        ],
+        "not_included": ["Linens upgrade", "Bartenders (~$250 each)", "Bar glassware upgrade (+$10/pp)"],
+        "planner_note": "Best value in the field by a wide margin. BK Venues preferred status + 35 years at these exact spaces. The $90/pp buffet with $55/pp open bar is extremely competitive for NYC. Strong recommend to prioritize.",
+        "next_action": "Reply with Nov 6/13 dates, request formal proposal for 150 guests at Greenpoint Loft, buffet + open bar standard"
+      },
+      {
+        "id": "creative-foods",
+        "name": "Creative Foods Catering",
+        "contact": "Michelle & Mehmet Kucuk",
+        "email": "contact@creativefoodscatering.com",
+        "phone": "914.837.9354",
+        "status": "responded",
+        "priority": "top",
+        "responded": true,
+        "bk_preferred": false,
+        "rating": 4,
+        "style": "Gourmet / Award-winning chef",
+        "experience": "25+ years",
+        "awards": ["Top Chef North East Award (2x)", "Clients: Google, Citibank, NYU, Columbia"],
+        "guest_minimum": 75,
+        "packages": [
+          {
+            "name": "Platinum",
+            "pp": 135,
+            "cocktail_apps": 3,
+            "coffee_tea": false,
+            "estimate_150": 20250
+          },
+          {
+            "name": "Diamond",
+            "pp": 142,
+            "cocktail_apps": 6,
+            "coffee_tea": true,
+            "estimate_150": 21300,
+            "recommended": true
+          },
+          {
+            "name": "Elegant",
+            "pp": 149,
+            "cocktail_apps": 8,
+            "coffee_tea": true,
+            "estimate_150": 22350
+          }
+        ],
+        "bar_packages": [
+          { "name": "Domestic wine & beer", "pp": 23.50, "estimate_150": 3525 },
+          { "name": "International wine & beer", "pp": 26.50, "estimate_150": 3975 },
+          { "name": "Wine, beer + 2 signature drinks", "pp": 32.50, "estimate_150": 4875 },
+          { "name": "House liquor open bar", "pp": 37.99, "estimate_150": 5699 },
+          { "name": "Name brands open bar", "pp": 42.99, "estimate_150": 6449, "recommended": true },
+          { "name": "Premium open bar", "pp": 46.99, "estimate_150": 7049 },
+          { "name": "Non-alcoholic only", "pp": 6.75, "estimate_150": 1013 }
+        ],
+        "pricing": {
+          "estimate_150_diamond_namebrand": {
+            "food": 21300,
+            "bar": 6449,
+            "tax_est": 2460,
+            "total_est": 30209,
+            "notes": "Excludes BK Venue kitchen fee — confirm separately. Beef entrees add $8/pp if selected."
+          }
+        },
+        "included": [
+          "Food, service and rentals (linens, silverware, china, glassware, risers, trays)",
+          "Professional uniformed staff setup, service, and cleanup",
+          "Ceremony chairs setup",
+          "All packages: salad, dinner rolls, 2 entrees + vegetarian, 2 sides, 2 desserts",
+          "Liquor license, DOH Caterer's Permit, ServSafe certified, fully insured"
+        ],
+        "not_included": ["BK Venue kitchen/facility fee", "Beef entree upcharge $8/pp", "Gratuity"],
+        "menu_highlights": {
+          "apps_notable": ["Pistachio crusted lamb chops", "Mini Angus burgers", "Maryland crab cakes", "Bacon wrapped scallops", "Oysters on the shell", "Beef bulgogi lettuce cups", "Charcuterie / Tuscan table"],
+          "entrees_notable": ["Braised short ribs (6-hr red wine demi)", "Herb filet mignon", "Sultan's delight (braised lamb over eggplant purée)", "Honey-chipotle glazed salmon", "Crispy bronzino"],
+          "desserts_notable": ["Churro station", "Pistachio baklava", "Mini dessert shooters (tiramisu, chocolate mousse, key lime)"],
+          "dietary": "Vegan, GF, dairy-free, nut-free options available on request. Kitchen is not a certified GF/nut-free facility."
+        },
+        "tasting_fee": "$75/pp refunded after booking",
+        "planner_note": "Strong credentials, Greenpoint Loft track record, and the most granular bar pricing in the field. Diamond package + name brands bar at ~$30K is competitive. The breadth of menu options is impressive — pistachio lamb chops, churro station, baklava. Moves into top tier with the PDFs reviewed.",
+        "next_action": "Reply to confirm Greenpoint Loft, Nov 6 or 13, 150 guests — request Diamond package + name brands bar proposal"
+      },
+      {
+        "id": "chef-cava",
+        "name": "Chef Cava",
+        "contact": "Scott Cavagnaro",
+        "email": "events@chefcava.com",
+        "phone": "347.460.4476",
+        "status": "responded",
+        "priority": "high",
+        "responded": true,
+        "bk_preferred": false,
+        "rating": 4.5,
+        "style": "Boutique / Farm-to-table / Chef-driven",
+        "experience": "French Culinary Institute, former La Grenouille (3-star NYT)",
+        "awards": ["Recipe tester — Food52", "Extensive BK Venues experience"],
+        "pricing": {
+          "buffet_pp": 110,
+          "family_style_pp": 120,
+          "plated_pp": 130,
+          "bar_starting_pp": 55,
+          "estimate_150_buffet_bar": {
+            "food": 16500,
+            "bar_est": 8250,
+            "tax_est": 2190,
+            "linens_glassware_est": 3000,
+            "total_est_range": "31000-35000",
+            "notes": "Linens and glassware NOT included — separate cost. Fully custom, seasonal menus."
+          }
+        },
+        "included": ["Food, professional staffing, kitchen rentals (silverware, flatware, platters, equipment)", "Setup 2 hrs before, breakdown 1 hr after", "Custom seasonal menus", "Dietary accommodations (vegan, vegetarian, kosher, halal)"],
+        "not_included": ["Linens", "Glassware", "Bar packages (separate negotiation)"],
+        "planner_note": "Highest food quality ceiling of any vendor. Scott's background at La Grenouille and farm-to-table philosophy means guests will say this wasn't typical wedding food. Budget stretch vs Tasty Creations, but worth a call if food is the top priority.",
+        "next_action": "Draft reply to schedule a call and request custom proposal for 150 guests, Greenpoint Loft, Nov 6 or 13"
+      },
+      {
+        "id": "bartleby-sage",
+        "name": "Bartleby & Sage",
+        "contact": "Rachael Livingston-Meko (COO)",
+        "email": "rachael@bartlebyandsage.com",
+        "phone": "518.881.6237",
+        "status": "responded",
+        "priority": "medium",
+        "responded": true,
+        "bk_preferred": false,
+        "rating": 4.5,
+        "style": "Premium boutique / Farm-to-table / Handmade",
+        "experience": "Est. 1997 — female-owned, Brooklyn-based",
+        "awards": ["4.9 stars / 107 reviews WeddingWire", "Martha Stewart Weddings featured", "NYT, Daily News, Food Network"],
+        "pricing": {
+          "buffet_pp": 150,
+          "plated_pp": 180,
+          "bar_full_premium_pp": 50,
+          "bar_limited_pp": 45,
+          "bar_wine_beer_pp": 38,
+          "bar_soft_drinks_pp": 15,
+          "production_fee_pct": 20,
+          "estimate_150_buffet_premium_bar": {
+            "food": 22500,
+            "bar": 7500,
+            "production_fee": 6000,
+            "tax_est": 3195,
+            "rentals_note": "Via Broadway Party Rentals — billed separately at caterer discount pricing",
+            "total_est_range": "39000-43000",
+            "notes": "20% production fee is the budget risk. Rentals additional. Gratuity not included. If venue requires NYS Day of Liquor Permit: add $500 + 3 weeks notice."
+          }
+        },
+        "bar_premium_includes": {
+          "liquors": ["Tito's", "Ketel One", "Bombay Sapphire", "Hendricks", "Bacardi", "Casamigos", "Maker's Mark", "Bulleit", "Monkey Shoulder", "Aperol", "Campari"],
+          "wines": ["CA Pinot Noir", "French Cote du Rhone", "NZ Sauvignon Blanc", "CA Chardonnay", "French Rosé", "Italian Prosecco"],
+          "beers": ["Brooklyn Lager", "Assorted Six Points"],
+          "extras": ["Welcome drinks (prosecco + sparkling water)", "1 specialty cocktail during cocktail hour", "Tableside wine & water service"]
+        },
+        "included": ["Staff setup 2 hrs before, cleanup 1 hr after", "Production fee covers in-house supplies, platters, trays, napkins, kitchen equipment", "Liquor liability insurance included in bar packages", "Kids/vendor meals $40 each"],
+        "not_included": ["Gratuity", "Rentals (via Broadway Party Rentals — billed separately)", "NYS Day of Liquor Permit if required ($500 + 3 weeks)"],
+        "menu_highlights": {
+          "apps_notable": ["Oysters on the shell (tequila-lime mignonette)", "Maine lobster roll (+$5/pp)", "Bacon wrapped scallop (maple glaze)", "Dirty martini deviled egg", "Duck confit empanada", "Grilled lamb chops (+$3/pp)", "Deconstructed beef Wellington", "Kimchi pancake", "5-cheese mac & cheese (edible parmesan spoon)"],
+          "buffet_themes": ["Mediterranean", "French Bistro", "American Steakhouse", "Southern BBQ (great rustic fit)"],
+          "entrees_notable": ["Slow-braised short ribs (pinot noir sauce, Anson Mills polenta)", "Grilled baby lamb chops (pomegranate-fig demi +$10/pp)", "Filet of beef (+$10/pp)", "Crispy bronzino", "Seared arctic char (pistachio gremolata)", "Duck leg adobo"],
+          "veg_mains": ["Wild mushroom & mascarpone lasagna", "Stuffed butternut squash (VG)", "Eggplant Ottolenghi", "Coconut curried cauliflower (VG)"],
+          "desserts_notable": ["Handmade pies (bourbon-pecan, sweet potato-pumpkin, apple crumb)", "Doughnut Plant towers (+$5/pp)", "Hazelnut chocolate opera cakes", "NY-style cheesecake", "Italian: sfogliatelle, cannoli, rainbow cookies"],
+          "wedding_cake": "Optional add-on — 1-tier from $350, multi-tiered from $10/pp"
+        },
+        "planner_note": "Highest food creativity of any vendor — extraordinary apps list, Southern BBQ buffet would be a perfect rustic fit at Greenpoint Loft. Budget concern: 20% production fee adds ~$6K pushing all-in to $39-43K before rentals. Worth a call to see if a leaner configuration is possible.",
+        "next_action": "Reply to confirm Greenpoint Loft + dates. Ask if there is a configuration under $30K all-in for 150 guests before committing to a full call."
+      },
+      {
+        "id": "jillicious",
+        "name": "Jillicious Foods & Events",
+        "contact": "Chef Jill Freiberg",
+        "email": "chefjill@jilliciousfoods.com",
+        "phone": "718.744.8076",
+        "status": "responded",
+        "priority": "high",
+        "responded": true,
+        "bk_preferred": false,
+        "rating": 4,
+        "style": "Custom / Food story concept / Boutique",
+        "pricing": {
+          "note": "Fully custom — no standard pricing. Brochure sent. Request 'basic numbers guide' on call.",
+          "discount_offer": "10% off wedding menus if booked by August 1, 2026",
+          "discount_deadline": "2026-08-01"
+        },
+        "planner_note": "Food story concept is interesting and fits a rustic/intimate vibe. 10% discount deadline is urgent — worth a 20-min call before Aug 1 just to get pricing. No pricing transparency is the only concern.",
+        "next_action": "Book consult call via calendly.com/jilliciousfoods/clientconversation BEFORE July 31 to lock in 10% discount",
+        "scheduling_link": "calendly.com/jilliciousfoods/clientconversation",
+        "time_sensitive": true,
+        "deadline": "2026-08-01"
+      },
+      {
+        "id": "eventfullnyc",
+        "name": "EVENTFULLNYC",
+        "contact": "Abigail Tash (Director of Sales)",
+        "email": "hello@eventfullnyc.com",
+        "phone": "718.624.5777",
+        "status": "responded",
+        "priority": "medium",
+        "responded": true,
+        "bk_preferred": false,
+        "rating": 3.5,
+        "pricing": {
+          "food_only_pp_range": "70-83",
+          "note": "Plated default. Needs event details to produce custom proposal. Bar pricing TBD."
+        },
+        "planner_note": "Has pricing transparency and replied quickly. Needs our details to build a proposal. Worth pursuing if top two fall through.",
+        "next_action": "Reply with: 150 guests, Nov 6 or 13, Greenpoint Loft, buffet or family-style preferred, ~6 hours, open bar needed"
+      },
+      {
+        "id": "marcey-brownstein",
+        "name": "Marcey Brownstein Catering",
+        "contact": "Michael Guadagno",
+        "email": "michael@marceybrownstein.com",
+        "phone": "212.807.0568",
+        "status": "responded",
+        "priority": "medium",
+        "responded": true,
+        "bk_preferred": false,
+        "rating": 3.5,
+        "pricing": { "note": "Fully custom — call required. Suggested Mon/Tue next week." },
+        "planner_note": "No pricing info. Reputation is solid. Follow up if top picks fall through.",
+        "next_action": "Reply agreeing to a call. Propose Monday or Tuesday, ask for a few time options."
+      },
+      {
+        "id": "dish-food",
+        "name": "Dish Food & Events",
+        "contact": "Clark Kinkade (Event Director)",
+        "email": "clark@dishfoodnyc.com",
+        "phone": "347.455.0077 x105",
+        "status": "responded",
+        "priority": "low",
+        "responded": true,
+        "bk_preferred": false,
+        "rating": 3,
+        "pricing": { "note": "No pricing yet. Sent wedding brochure link. Has scheduling link." },
+        "planner_note": "Warm response, Long Island City based, knows BK Venues. Low priority until top picks are resolved.",
+        "next_action": "Reply mentioning Greenpoint Loft, 150 guests, Nov 6 or 13, ask for pricing"
+      },
+      {
+        "id": "bassett",
+        "name": "Bassett Caterers",
+        "contact": "Frank / Laura",
+        "email": "info@bassettcaterers.com",
+        "status": "responded",
+        "priority": "medium",
+        "responded": true,
+        "bk_preferred": false,
+        "rating": 3.5,
+        "pricing": { "note": "BK Venue packages available. Need our date to check availability." },
+        "planner_note": "Familiar with all BK Venues locations and have BK-designed packages. Followed up twice — respond soon or they may move on.",
+        "next_action": "Reply with Nov 6/13 dates, Greenpoint Loft, 150 guests — agree to a call"
+      },
+      {
+        "id": "fig-and-pig",
+        "name": "Fig & Pig Catering",
+        "contact": "Lauren Shaw (Operations Manager)",
+        "email": "hello@figandpigcatering.com",
+        "status": "responded",
+        "priority": "low",
+        "responded": true,
+        "bk_preferred": false,
+        "rating": 4,
+        "pricing": {
+          "all_in_pp_range": "225-325",
+          "admin_fee_flat": 1850,
+          "estimate_150_total_range": "35000-50000",
+          "note": "All-in (food, bar, staff, tax, gratuity) but rentals are separate. Likely over budget for 150 guests.",
+          "tasting_fee": "$150/pp before booking, complimentary after"
+        },
+        "planner_note": "Outstanding food reputation (5.0 stars, 'best wedding food I've ever had' reviews). But $225-325/pp all-in for 150 guests approaches the entire $50K wedding budget. Only viable if guest count drops significantly.",
+        "next_action": "No action needed at this time — revisit only if guest count drops below 100"
+      }
+    ],
+    "still_waiting": ["Bonsoir Caterers", "My Heavenly Event", "Purslane", "Harvest & Revel", "Chef Rossi NYC", "Simplicity at Your Service", "MME Services"],
+    "decision_framework": {
+      "budget_comfortable": "~$23-26K — Tasty Creations (buffet + open bar standard + tax)",
+      "budget_stretch": "~$28-32K — Creative Foods Diamond + name brands bar",
+      "budget_over": "Bartleby & Sage (~$39-43K), Fig & Pig (~$35-50K)",
+      "top_picks": ["tasty-creations", "creative-foods"],
+      "next_steps": [
+        "Get formal proposals from Tasty Creations AND Creative Foods simultaneously",
+        "Schedule Jillicious call before Aug 1 for 10% discount",
+        "Reply to Bassett (they followed up twice)",
+        "Defer Bartleby & Sage and Fig & Pig — over budget at 150 guests"
+      ]
+    }
+  },
   "notes": [
     { "color": "#EF9F27", "text": "NJ/NY vendor pricing often carries hidden service charges and layered fees — always request fully itemized quotes before signing." },
     { "color": "#EF9F27", "text": "Pursue multiple venues simultaneously — fall Saturdays in this market book 12–18 months in advance." },
     { "color": "#639922", "text": "Nov 6 and Nov 13 are the recommended date targets. Nov 20 carries Thanksgiving travel conflict risk." },
-    { "color": "#D85A30", "text": "The Greenpoint Loft inquiry email is drafted and ready to send — highest-priority action right now." }
+    { "color": "#D85A30", "text": "Jillicious Foods: 10% discount if booked by Aug 1, 2026 — schedule consult call ASAP." },
+    { "color": "#639922", "text": "Top catering picks: Tasty Creations (~$24K est.) and Creative Foods Diamond pkg (~$30K est.) — request formal proposals from both." },
+    { "color": "#EF9F27", "text": "Bartleby & Sage 20% production fee adds ~$6K — pushes to $39-43K before rentals. Over budget at 150 guests." }
   ]
 }
