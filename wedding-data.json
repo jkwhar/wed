@@ -1,7 +1,33 @@
 {
   "meta": {
-    "last_updated": "2026-06-26",
-    "updated_by": "Claude Wedding Planner"
+    "last_updated": "2026-06-27 02:02 UTC",
+    "updated_by": "Claude Wedding Planner",
+    "changelog": [
+      {
+        "timestamp": "2026-06-27 02:02 UTC",
+        "summary": "Added price_summary (food_pp, bar_pp, combined_pp) to all 13 catering vendors"
+      },
+      {
+        "timestamp": "2026-06-26 20:00 UTC",
+        "summary": "Added 3 new vendor responses: Chef Rossi, Gracious Thyme, MME Services. still_waiting reduced to 5."
+      },
+      {
+        "timestamp": "2026-06-24 18:00 UTC",
+        "summary": "Added Chef Cava ($130/pp plated), Bassett Caterers, Marcey Brownstein to vendor list. service_style set to plated."
+      },
+      {
+        "timestamp": "2026-06-24 12:00 UTC",
+        "summary": "Added Bartleby & Sage, Jillicious Foods, Creative Foods, Fig & Pig, EVENTFULLNYC, Dish Food responses."
+      },
+      {
+        "timestamp": "2026-06-23 23:00 UTC",
+        "summary": "Initial catering outreach sent to 14 vendors. Budget target set to $28K. Tasty Creations identified as top pick."
+      },
+      {
+        "timestamp": "2026-06-23 20:00 UTC",
+        "summary": "Greenpoint Loft (BK Venues) confirmed available all Nov 2027 Saturdays. Crystal Springs inquiry drafted."
+      }
+    ]
   },
   "couple": {
     "partner1": "Johnny Kim",
